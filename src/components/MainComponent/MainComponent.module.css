@@ -1,0 +1,231 @@
+.mainWrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+.subHeading {
+  color: var(--color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 1.6px;
+}
+.heading {
+  color: var(--color);
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 80px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.feature {
+  border-radius: 10px;
+  background: var(--bg);
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  max-width: 403px;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+.feature::before {
+  content: " ";
+  position: absolute;
+  top: 70%;
+
+  left: -10px;
+  transform: translate(-100%, -50%) rotate(-45deg) translateZ(0);
+  transform-origin: center;
+  width: 100px;
+  height: 2px;
+  background: var(--lineColor);
+  z-index: -1;
+}
+.feature-1::before {
+  top: 70%;
+  right: -10px;
+  left: auto;
+  transform: translate(100%, -50%) rotate(45deg) translateZ(0);
+}
+.feature-2::before {
+  right: -10px;
+  left: auto;
+  top: 50%;
+
+  transform: translate(100%, -50%) rotate(0deg);
+  opacity: 1;
+}
+.feature-4::before {
+  content: " ";
+  position: absolute;
+  top: 70%;
+
+  left: -10px;
+  transform: translate(-100%, -50%) rotate(-45deg) translateZ(0);
+  transform-origin: center;
+  width: 100px;
+}
+.feature-5::before {
+  left: -10px;
+  top: 50%;
+
+  right: auto;
+  transform: translate(-100%, -50%) rotate(0deg) translateZ(0);
+  opacity: 1;
+}
+.feature-6::before {
+  content: " ";
+  position: absolute;
+  top: auto;
+  bottom: 70%;
+
+  left: -10px;
+  transform: translate(-100%, -50%) rotate(45deg) translateZ(0);
+  transform-origin: center;
+  width: 100px;
+}
+.feature-3::before {
+  bottom: 70%;
+  top: auto;
+  right: -10px;
+  left: auto;
+  transform: translate(100%, 50%) rotate(-45deg) translateZ(0);
+}
+.features4 .feature-2::before {
+  right: -10px;
+  left: auto;
+  top: 50%;
+
+  transform: translate(100%, -50%) rotate(-45deg);
+}
+.features4 .feature-4::before {
+  content: " ";
+  position: absolute;
+  top: auto;
+  bottom: 50%;
+
+  left: -10px;
+  transform: translate(-100%, -50%) rotate(45deg) translateZ(0);
+  transform-origin: center;
+  width: 100px;
+}
+.features4 .feature-3::before {
+  content: " ";
+  position: absolute;
+  top: 70%;
+
+  left: -10px;
+  transform: translate(-100%, -50%) rotate(-45deg) translateZ(0);
+  transform-origin: center;
+  width: 100px;
+}
+.features2 .feature-1::before {
+  right: -10px;
+  left: auto;
+  top: 50%;
+
+  transform: translate(100%, -50%) rotate(0deg);
+  opacity: 1;
+}
+.features2 .feature-2::before {
+  left: -10px;
+  top: 50%;
+
+  right: auto;
+  transform: translate(-100%, -50%) rotate(0deg) translateZ(0);
+  opacity: 1;
+}
+.featureHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.title {
+  color: var(--color);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127.273%;
+}
+.info {
+  color: var(--color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.deviceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.device {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+.device .img {
+  width: 100%;
+  display: block;
+  margin-top: auto;
+}
+.mainContent {
+  min-width: 216px;
+  aspect-ratio: 1/1;
+
+  width: 35%;
+  max-width: 332px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg);
+  border: var(--border);
+}
+.mainTitle {
+  color: var(--color);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
